@@ -2,120 +2,228 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kamikaze Cars</title>
-    <link rel="stylesheet" href="ABOUT.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - HTML Formatting</title>
     <style>
-
         body {
             font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #fff;
-            text-align: center;
-        }
-        <h1 colo>high</>h1>
-        header {
-            padding: 20px;
-            background-color: #222;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav button {
-            background-color: #ff0055;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            font-size: 1em;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-        nav button:hover {
-            background-color: #ff66aa;
-        }
-        table {
+            max-width: 800px;
             margin: 0 auto;
-            border-collapse: collapse;
-            width: 90%;
-        }
-        td {
-            border: 2px solid #444;
-            padding: 10px;
-        }
-        img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
-        }
-        iframe {
-            width: 100%;
-            max-width: 300px;
-            height: 170px;
-            border-radius: 10px;
-        }
-        footer {
-            margin-top: 40px;
             padding: 20px;
-            background-color: #222;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .line {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Kamikaze Cars</h1>
-        <nav>
-            <button onclick="location.href='home.html'">Home</button>
-            <button onclick="location.href='#gallery'">Gallery</button>
-        </nav>
-    </header>
+    <h1>Assignment 2 - HTML Text Formatting</h1>
+    
+    <!-- Line 1: Bold -->
+    <div class="line">
+        <strong>Line 1: This is Bold Text</strong>
+    </div>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h2>Welcome to Kamikaze Cars</h2>
-        <p>Check out some amazing cars and videos below!</p>
-    </section>
+    <!-- Line 2: Italics -->
+    <div class="line">
+        <em>Line 2: This is Italic Text</em>
+    </div>
 
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Car Gallery</h2>
-        <table>
+    <!-- Line 3: Underlined -->
+    <div class="line">
+        <u>Line 3: This is Underlined Text</u>
+    </div>
+
+    <!-- Line 4: Superscripts; date other 3 -->
+    <div class="line">
+        Line 4: The date<sup>superscript</sup> example - 2024<sup>1st</sup> 
+    </div>
+
+    <!-- Line 5: Subscript > 4 -->
+    <div class="line">
+        Line 5: Chemical formula H<sub>2</sub>O, subscript example
+    </div>
+
+    <!-- Line 6: Stroke (Strikethrough) -->
+    <div class="line">
+        Line 6: <s>Strikethrough Text</s> or <del>Deleted Text</del>
+    </div>
+
+    <!-- Line 7: Highlight -->
+    <div class="line">
+        Line 7: <mark>Highlighted Text</mark>
+    </div>
+
+    <!-- Line 8: Quotation -->
+    <div class="line">
+        Line 8: <q>Inline Quotation</q>
+    </div>
+
+    <!-- Line 9: Indent Quotation -->
+    <div class="line">
+        Line 9: 
+        <blockquote style="margin-left: 40px; border-left: 3px solid #ccc; padding-left: 15px;">
+            This is an Indented Quotation block. It is used for longer quotes that need visual distinction.
+        </blockquote>
+    </div>
+
+    <!-- Line 10: Footer -->
+    <div class="line">
+        <footer style="text-align: center; margin-top: 30px; padding-top: 15px; border-top: 1px solid #ccc;">
+            Line 10: Footer - &copy; 2024 Assignment 2
+        </footer>
+    </div>
+
+    <!-- Line 11: Line breaks -> 4 Lines -->
+    <div class="line">
+        Line 11: Line breaks example:<br>
+        Line A<br>
+        Line B<br>
+        Line C<br>
+        Line D
+    </div>
+
+    <!-- Line 12: 3 lines with HR (Horizontal Rule) -->
+    <div class="line">
+        Line 12: Horizontal Rule examples:
+        <hr>
+        First section above the line
+        <hr>
+        Second section
+        <hr>
+        Third section
+    </div>
+
+    <!-- Line 13: 3 lines Pre (Preformatted text) -->
+    <div class="line">
+        Line 13: Preformatted text preserves spacing:
+        <pre>
+Line A with extra spaces
+    Line B indented
+        Line C more indented
+        </pre>
+    </div>
+
+    <!-- Line 14: List -> unordered list with 5 items / Ordered list with 5 items -->
+    <div class="line">
+        Line 14a: Unordered List (5 items):
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        
+        Line 14b: Ordered List (5 items):
+        <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+            <li>Fourth Item</li>
+            <li>Fifth Item</li>
+        </ol>
+    </div>
+
+    <!-- Line 15: Nested list with 6 items -->
+    <div class="line">
+        Line 15: Nested List (6 items):
+        <ul>
+            <li>Main Item 1
+                <ul>
+                    <li>Sub Item 1.1</li>
+                    <li>Sub Item 1.2</li>
+                </ul>
+            </li>
+            <li>Main Item 2
+                <ul>
+                    <li>Sub Item 2.1</li>
+                    <li>Sub Item 2.2</li>
+                </ul>
+            </li>
+            <li>Main Item 3</li>
+        </ul>
+    </div>
+
+    <!-- Line 17: Tables: 1 table with 10 columns and 5 rows -->
+    <div class="line">
+        Line 17: Table with 10 columns and 5 rows:
+        <table border="1" style="border-collapse: collapse; width: 100%;">
             <tr>
-                <td>
-                    <img src="pic/3.jpg" alt="Ferrari 488 Pista">
-                    <p>Ferrari 488 Pista</p>
-                </td>
-                <td>
-                    <img src="pic/2.jpg" alt="Lamborghini Huracan Evo">
-                    <p>Lamborghini Huracan Evo</p>
-                </td>
-                <td>
-                    <img src="pic/1.jpg" alt="McLaren 720S">
-                    <p>McLaren 720S</p>
-                </td>
+                <th>Col 1</th>
+                <th>Col 2</th>
+                <th>Col 3</th>
+                <th>Col 4</th>
+                <th>Col 5</th>
+                <th>Col 6</th>
+                <th>Col 7</th>
+                <th>Col 8</th>
+                <th>Col 9</th>
+                <th>Col 10</th>
             </tr>
             <tr>
-                <td>
-                    <iframe src="https://youtu.be/TrbTHgzBi24" title="Ferrari 488 Pista Video" allowfullscreen></iframe>
-                </td>
-                <td>
-                    <iframe src="https://youtu.be/tYSo0LsHhvo" title="Lamborghini Huracan Video" allowfullscreen></iframe>
-                </td>
-                <td>
-                    <iframe src="https://youtu.be/t9-cMiEDNyk" title="McLaren 720S Video" allowfullscreen></iframe>
-                </td>
+                <td>Row 1</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Row 2</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Row 3</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Row 4</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
             </tr>
         </table>
-    </section>
-     <a href="home.html">Back Home</a>
+    </div>
 
-    <footer>
-        &copy; 2026 Kamikaze Cars. All rights reserved.
-    </footer>
+    <p style="text-align: center; margin-top: 30px; color: #666;">
+        Module 2 Test
+    </p>
 </body>
 </html>
