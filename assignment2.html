@@ -2,141 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment 2</title>
-
+    <title>Kamikaze Cars</title>
+    <link rel="stylesheet" href="ABOUT.css">
     <style>
+
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(45deg, #000000, #434343);
-            color: white;
-            padding: 20px;
-        }
-
-        h1 {
+            background-color: #111;
+            color: #fff;
             text-align: center;
         }
-
+        <h1 colo>high</>h1>
+        header {
+            padding: 20px;
+            background-color: #222;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav button {
+            background-color: #ff0055;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        nav button:hover {
+            background-color: #ff66aa;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 90%;
+        }
+        td {
+            border: 2px solid #444;
+            padding: 10px;
+        }
         img {
-            width: 300px;
-            margin: 10px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
             border-radius: 10px;
         }
-
-        .gallery {
-            text-align: center;
+        iframe {
+            width: 100%;
+            max-width: 300px;
+            height: 170px;
+            border-radius: 10px;
         }
-
         footer {
-            margin-top: 30px;
-            text-align: center;
-            border-top: 1px solid white;
-            padding-top: 10px;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #222;
         }
     </style>
 </head>
-
 <body>
+    <header>
+        <h1>Kamikaze Cars</h1>
+        <nav>
+            <button onclick="location.href='home.html'">Home</button>
+            <button onclick="location.href='#gallery'">Gallery</button>
+        </nav>
+    </header>
 
-<h1>Assignment 2</h1>
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Kamikaze Cars</h2>
+        <p>Check out some amazing cars and videos below!</p>
+    </section>
 
-<!-- Paragraph Lines -->
-<p><b>Line 1:</b> This is a bold paragraph showing strong text.</p>
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Car Gallery</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src="pic/3.jpg" alt="Ferrari 488 Pista">
+                    <p>Ferrari 488 Pista</p>
+                </td>
+                <td>
+                    <img src="pic/2.jpg" alt="Lamborghini Huracan Evo">
+                    <p>Lamborghini Huracan Evo</p>
+                </td>
+                <td>
+                    <img src="pic/1.jpg" alt="McLaren 720S">
+                    <p>McLaren 720S</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <iframe src="https://youtu.be/TrbTHgzBi24" title="Ferrari 488 Pista Video" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe src="https://youtu.be/tYSo0LsHhvo" title="Lamborghini Huracan Video" allowfullscreen></iframe>
+                </td>
+                <td>
+                    <iframe src="https://youtu.be/t9-cMiEDNyk" title="McLaren 720S Video" allowfullscreen></iframe>
+                </td>
+            </tr>
+        </table>
+    </section>
+     <a href="home.html">Back Home</a>
 
-<p><i>Line 2:</i> This paragraph is written in italics style.</p>
-
-<p><u>Line 3:</u> This line is underlined for emphasis.</p>
-
-<p>Line 4: H<sup>2</sup>O is water and today is 1<sup>st</sup> April.</p>
-
-<p>Line 5: CO<sub>2</sub> is carbon dioxide.</p>
-
-<p><del>Line 6: This text is crossed out.</del></p>
-
-<p><mark>Line 7: This text is highlighted.</mark></p>
-
-<p>Line 8: <q>This is a short quotation.</q></p>
-
-<blockquote>
-    Line 9: This is an indented quotation showing a longer quote.
-</blockquote>
-
-<!-- Line Break -->
-<p>Line 10: This is line one<br>This is line two after a break</p>
-
-<!-- Horizontal Line -->
-<hr>
-
-<p>Line 11: Above is a horizontal line.</p>
-
-<!-- Lists -->
-<h3>Unordered List</h3>
-<ul>
-    <li>Car</li>
-    <li>Bike</li>
-    <li>Plane</li>
-    <li>Boat</li>
-    <li>Train</li>
-</ul>
-
-<h3>Ordered List</h3>
-<ol>
-    <li>Wake up</li>
-    <li>Eat</li>
-    <li>Code</li>
-    <li>Sleep</li>
-    <li>Repeat</li>
-</ol>
-
-<h3>Nested List</h3>
-<ul>
-    <li>Cars
-        <ul>
-            <li>BMW</li>
-            <li>Nissan</li>
-            <li>Ford</li>
-        </ul>
-    </li>
-</ul>
-
-<!-- Images Section -->
-<h2>Car Gallery</h2>
-
-<div class="gallery">
-    <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" alt="Car 1">
-    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8" alt="Car 2">
-    <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" alt="Car 3">
-</div>
-
-<!-- Table -->
-<h2>Car Table</h2>
-
-<table border="1" cellpadding="10">
-    <tr>
-        <th>Car</th>
-        <th>Brand</th>
-        <th>Speed</th>
-    </tr>
-    <tr>
-        <td>Mustang</td>
-        <td>Ford</td>
-        <td>250 km/h</td>
-    </tr>
-    <tr>
-        <td>GTR</td>
-        <td>Nissan</td>
-        <td>315 km/h</td>
-    </tr>
-    <tr>
-        <td>BMW M4</td>
-        <td>BMW</td>
-        <td>280 km/h</td>
-    </tr>
-</table>
-
-<!-- Footer -->
-<footer>
-    <p>© 2026 Assignment 2 - Michael Odhiambo</p>
-</footer>
-
+    <footer>
+        &copy; 2026 Kamikaze Cars. All rights reserved.
+    </footer>
 </body>
 </html>
