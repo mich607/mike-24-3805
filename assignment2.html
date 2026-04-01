@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 2 - HTML Formatting</title>
+    <title>Assignment 2 - HTML Formatting with Perfumes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
@@ -19,72 +19,61 @@
             padding-bottom: 10px;
         }
         .line {
-            margin-bottom: 15px;
-            padding: 10px;
+            margin-bottom: 20px;
+            padding: 15px;
             background-color: #f9f9f9;
-            border-radius: 4px;
+            border-radius: 6px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ddd;
         }
     </style>
 </head>
 <body>
     <h1>Assignment 2 - HTML Text Formatting</h1>
-    
-    <!-- Line 1: Bold -->
-    <div class="line">
-        <strong>Line 1: This is Bold Text</strong>
-    </div>
 
-    <!-- Line 2: Italics -->
-    <div class="line">
-        <em>Line 2: This is Italic Text</em>
-    </div>
-
-    <!-- Line 3: Underlined -->
-    <div class="line">
-        <u>Line 3: This is Underlined Text</u>
-    </div>
-
-    <!-- Line 4: Superscripts; date other 3 -->
-    <div class="line">
-        Line 4: The date<sup>superscript</sup> example - 2024<sup>1st</sup> 
-    </div>
-
-    <!-- Line 5: Subscript > 4 -->
-    <div class="line">
-        Line 5: Chemical formula H<sub>2</sub>O, subscript example
-    </div>
-
-    <!-- Line 6: Stroke (Strikethrough) -->
-    <div class="line">
-        Line 6: <s>Strikethrough Text</s> or <del>Deleted Text</del>
-    </div>
-
-    <!-- Line 7: Highlight -->
-    <div class="line">
-        Line 7: <mark>Highlighted Text</mark>
-    </div>
-
-    <!-- Line 8: Quotation -->
-    <div class="line">
-        Line 8: <q>Inline Quotation</q>
-    </div>
-
-    <!-- Line 9: Indent Quotation -->
+    <!-- Previous formatting lines -->
+    <div class="line"><strong>Line 1: This is Bold Text</strong></div>
+    <div class="line"><em>Line 2: This is Italic Text</em></div>
+    <div class="line"><u>Line 3: This is Underlined Text</u></div>
+    <div class="line">Line 4: The date<sup>superscript</sup> example - 2024<sup>1st</sup></div>
+    <div class="line">Line 5: Chemical formula H<sub>2</sub>O, subscript example</div>
+    <div class="line">Line 6: <s>Strikethrough Text</s> or <del>Deleted Text</del></div>
+    <div class="line">Line 7: <mark>Highlighted Text</mark></div>
+    <div class="line">Line 8: <q>Inline Quotation</q></div>
     <div class="line">
         Line 9: 
         <blockquote style="margin-left: 40px; border-left: 3px solid #ccc; padding-left: 15px;">
             This is an Indented Quotation block. It is used for longer quotes that need visual distinction.
         </blockquote>
     </div>
-
-    <!-- Line 10: Footer -->
     <div class="line">
         <footer style="text-align: center; margin-top: 30px; padding-top: 15px; border-top: 1px solid #ccc;">
             Line 10: Footer - &copy; 2024 Assignment 2
         </footer>
     </div>
-
-    <!-- Line 11: Line breaks -> 4 Lines -->
     <div class="line">
         Line 11: Line breaks example:<br>
         Line A<br>
@@ -92,8 +81,6 @@
         Line C<br>
         Line D
     </div>
-
-    <!-- Line 12: 3 lines with HR (Horizontal Rule) -->
     <div class="line">
         Line 12: Horizontal Rule examples:
         <hr>
@@ -103,8 +90,6 @@
         <hr>
         Third section
     </div>
-
-    <!-- Line 13: 3 lines Pre (Preformatted text) -->
     <div class="line">
         Line 13: Preformatted text preserves spacing:
         <pre>
@@ -113,8 +98,6 @@ Line A with extra spaces
         Line C more indented
         </pre>
     </div>
-
-    <!-- Line 14: List -> unordered list with 5 items / Ordered list with 5 items -->
     <div class="line">
         Line 14a: Unordered List (5 items):
         <ul>
@@ -134,8 +117,6 @@ Line A with extra spaces
             <li>Fifth Item</li>
         </ol>
     </div>
-
-    <!-- Line 15: Nested list with 6 items -->
     <div class="line">
         Line 15: Nested List (6 items):
         <ul>
@@ -155,71 +136,99 @@ Line A with extra spaces
         </ul>
     </div>
 
-    <!-- Line 17: Tables: 1 table with 10 columns and 5 rows -->
+    <!-- Table with perfume data -->
     <div class="line">
-        Line 17: Table with 10 columns and 5 rows:
-        <table border="1" style="border-collapse: collapse; width: 100%;">
+        Line 17: Perfume Table with 10 columns and 5 rows
+        <table>
             <tr>
-                <th>Col 1</th>
-                <th>Col 2</th>
-                <th>Col 3</th>
-                <th>Col 4</th>
-                <th>Col 5</th>
-                <th>Col 6</th>
-                <th>Col 7</th>
-                <th>Col 8</th>
-                <th>Col 9</th>
-                <th>Col 10</th>
+                <th>Brand</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Size</th>
+                <th>Price ($)</th>
+                <th>Gender</th>
+                <th>Scent</th>
+                <th>Origin</th>
+                <th>Rating</th>
+                <th>Stock</th>
             </tr>
             <tr>
-                <td>Row 1</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
+                <td>Dior</td>
+                <td>Sauvage</td>
+                <td>Eau de Toilette</td>
+                <td>100ml</td>
+                <td>120</td>
+                <td>Men</td>
+                <td>Woody</td>
+                <td>France</td>
+                <td>4.8</td>
+                <td>Available</td>
             </tr>
             <tr>
-                <td>Row 2</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
+                <td>Chanel</td>
+                <td>No.5</td>
+                <td>Eau de Parfum</td>
+                <td>50ml</td>
+                <td>150</td>
+                <td>Women</td>
+                <td>Floral</td>
+                <td>France</td>
+                <td>4.9</td>
+                <td>Available</td>
             </tr>
             <tr>
-                <td>Row 3</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
+                <td>Calvin Klein</td>
+                <td>CK One</td>
+                <td>Eau de Toilette</td>
+                <td>100ml</td>
+                <td>80</td>
+                <td>Unisex</td>
+                <td>Citrus</td>
+                <td>USA</td>
+                <td>4.5</td>
+                <td>Limited</td>
             </tr>
             <tr>
-                <td>Row 4</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
+                <td>Gucci</td>
+                <td>Bloom</td>
+                <td>Eau de Parfum</td>
+                <td>75ml</td>
+                <td>130</td>
+                <td>Women</td>
+                <td>Floral</td>
+                <td>Italy</td>
+                <td>4.7</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Tom Ford</td>
+                <td>Black Orchid</td>
+                <td>Eau de Parfum</td>
+                <td>50ml</td>
+                <td>180</td>
+                <td>Unisex</td>
+                <td>Oriental</td>
+                <td>USA</td>
+                <td>4.6</td>
+                <td>Out of Stock</td>
             </tr>
         </table>
+    </div>
+
+    <!-- Perfume images -->
+    <div class="line">
+        Line 18: Perfume Images
+        <img src="https://images.unsplash.com/photo-1585386959984-a41552262f4d" alt="Perfume 1">
+        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd" alt="Perfume 2">
+        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f" alt="Perfume 3">
+        <img src="https://images.unsplash.com/photo-1629198735660-e39ea93f5c12" alt="Perfume 4">
+    </div>
+
+    <!-- Perfume videos -->
+    <div class="line">
+        Line 19: Perfume Videos
+        <iframe src="https://www.youtube.com/embed/9cKsq14Kfsw" title="Perfume Video 1" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/dk9uNWPP7EA" title="Perfume Video 2" allowfullscreen></iframe>
     </div>
 
     <p style="text-align: center; margin-top: 30px; color: #666;">
