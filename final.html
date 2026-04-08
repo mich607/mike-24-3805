@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #000;
+        }
+        .container {
+            padding: 20px;
+        }
+        .car-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .car {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .car img {
+            width: 100%;
+            height: auto;
+        }
+        .car-details {
+            padding: 15px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Car Dealership</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#models">Models</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="models">
+        <h2>Our Car Models</h2>
+        <div class="car-list">
+            <div class="car">
+                <img src="https://via.placeholder.com/300x200?text=Car+1" alt="Car Model 1" />
+                <div class="car-details">
+                    <h3>Model A</h3>
+                    <p>Price: $20,000</p>
+                    <p>Fuel Efficiency: 30 MPG</p>
+                </div>
+            </div>
+            <div class="car">
+                <img src="https://via.placeholder.com/300x200?text=Car+2" alt="Car Model 2" />
+                <div class="car-details">
+                    <h3>Model B</h3>
+                    <p>Price: $25,000</p>
+                    <p>Fuel Efficiency: 28 MPG</p>
+                </div>
+            </div>
+            <div class="car">
+                <img src="https://via.placeholder.com/300x200?text=Car+3" alt="Car Model 3" />
+                <div class="car-details">
+                    <h3>Model C</h3>
+                    <p>Price: $30,000</p>
+                    <p>Fuel Efficiency: 25 MPG</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing the best quality cars at affordable prices. Visit us for a test drive today!</p>
+    </section>
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>Email: info@cardealership.com</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Address: 123 Car Street, Auto City</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Car Dealership. All rights reserved.</p>
+    </footer>
+</body>
+</html>
